@@ -13,7 +13,7 @@
     display: flex;
 }
 
-header,main{
+header,main, footer{
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -168,10 +168,104 @@ header,main{
     color: rgba(120, 120, 133, 1);
 
 }
+.see-more{
+    width: 100%;
+    text-align: right;
+    padding-left: 20px;
+    margin-left: -90px;
 
+}
+ .see-more a{
+    text-decoration: none;
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1.25rem;
+    font-weight: 500;
+
+ }
+
+
+ .features-container{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+ }
+
+ .features-image{
+    margin-left: 80px;
+ }
+ .features-image img{
+    width: 100%;
+ }
+
+ .features-info{
+    margin-right: 80px;
+ }
+
+ .features-title{
+    font-size: 2.50rem;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+ }
+
+ .features-description{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(108, 108, 108, 1);
+    width: 501px;
+    margin-top: 10px;
+ }
+
+ .features-btn{
+    width: 155px;
+    height: 44px;
+    padding: 10px 24px;
+    border: none;
+    color: white;
+    background-color: rgba(224, 44, 109, 1);
+    border-radius: 8px;
+    text-align: center;
+    
+ }
+
+
+ /* footer styles start */
+.footer-container{
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    background-color: black;
+    padding: 30px;
+}
+
+
+ .footer-title{
+    font-size: 1.5rem;
+    font-weight:700 ;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+ }
+
+
+ .footer-copyright,.copyright{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+ }
+
+ .icon{
+    color:white;
+    text-align: center;
+ }
+ 
   /* responsive styles */
   @media screen and (max-width: 576px) {
-    .navber-container, .hero-section{
+    .navber-container, 
+    .hero-section, 
+    .see-more{
         flex-direction: column;
         margin-top: 10px;
     }
@@ -247,6 +341,40 @@ header,main{
     .product-card{
         margin-left: 70px;
     }
+
+    .features-container{
+        flex-direction: column-reverse;
+    }
+
+    .features-image{
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+
+     .features-title{
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 317px;
+    text-align: center;
+ }
+
+ .features-description{
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: rgba(108, 108, 108, 1);
+    margin-top: 10px;
+    width: 317px;
+    text-align: center;
+ }
+
+ .features-info{
+    margin-right: 0px;
+    margin-left: 50px;
+    text-align: center;
+ }
+
 
 
     
